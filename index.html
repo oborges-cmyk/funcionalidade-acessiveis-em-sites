@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Incluso - Projeto de Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Ferramentas de acessibilidade para o usuário-->
+    <div class="acessibilidade" role="region" aria-label="Barra de acessibilidade">
+        <span> Acessibilidade: </span>
+        <button id="btn-contrast" onclick="ToggleContrast()">Alto constraste</button>
+        <button id="btn-increase" onclick="ChangeFontSize(1)">A+</button>
+        <button id="btn-decrease" onclick="ChangeFontSize(-1)">A-</button>
+    </div>
+    <header>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li> <a href="#sobre">O projeto</a></li>
+                <li> <a href="#dicas">Boas Práticas</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção sobre o projeto-->
+        <section id="sobre">
+            <h1>Contruindo a web para todos</h1>
+            <p> A acessibilidade na web garante que pessoas com deficiência visual, auditiva, 
+                motora ou cognitiva possam acessar e utilizar conteúdos e serviços na internet de 
+                forma eficaz </p>
+        </section>
+    </main>
+</body>
+</html>
