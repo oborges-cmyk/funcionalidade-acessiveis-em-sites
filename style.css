@@ -4,3 +4,55 @@
     box-sizing: border-box;
 }
 
+/* Variáveis de Cores (Padrão e Alto Constraste) */
+
+    :root {
+    --bg-color: #f9f9f9;
+    --text-color: #222222;
+    --primary-color: #0056b3;
+    --primary-hover: #003d82;
+    --card-bg: #ffffff;
+    --border-color: #cccccc;
+    --focus-outline: #ffbf00;
+    }
+
+    body.high-contrast {
+        --bg-color: #f9f9f9;
+        --text-color: #222222;
+        --primary-color: #0056b3;
+        --primary-hover: #e6e600;
+        --card-bg: #121212;
+        --border-color: #ffffff;
+        --focus-outline: #ffff00;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* barra de acesibilidade no topo */
+    .acessibility-bar {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 0.5 rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .acessibility-bar button {
+        background: transparent;
+        border: 1px solid;
+        color: #ffffff;
+        padding: 4px 8px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
