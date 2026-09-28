@@ -56,3 +56,15 @@ body {
         cursor: pointer;
         border-radius: 4px;
     }
+
+    .acessibility-bar button:hover {
+        background-color: #555555;
+    }
+
+/* Layout do cabeçalho e navegação */
+header {
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
